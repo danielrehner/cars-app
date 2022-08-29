@@ -1,0 +1,19 @@
+<div class="grid">
+  <div class="grid-cols-12">
+  <%= form_tag cars_index_path, method: :get do %>
+    <%= select_tag :make, options_for_select(@vehicle_makes, @selected_make&.id), prompt: "- Select Make -", onchange: "this.form.submit()" %>
+    <%= select_tag :model, options_for_select(@vehicle_models, @selected_model&.id), prompt: "- Select Model -", onchange: "this.form.submit()" %>
+    <%= select_tag :year, options_for_select(@vehicle_years, @selected_year&.id), prompt: "- Select Year -", onchange: "this.form.submit()" %>
+  <% end %>
+  </div>
+  <% if can_display_car_details? %>
+    <div class="grid-cols-12 mt-4">
+      <%= car_details_message %>
+    </div>
+    <div class="grid-cols-12 mt-4">
+      <%= link_to "Click here to clear your selections and try again", root_path,
+        class: "text-blue-600 underline", data: { turbo_frame: "_top" }
+        %>
+    </div>
+  <% end %>
+</div>
