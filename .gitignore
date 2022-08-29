@@ -33,3 +33,19 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE
+.idea
+.vscode
+
+# dot-env gem
+.env
