@@ -1,24 +1,3 @@
-# README
+Simple rails 7 example app showing dependent drop downs using Stimulus and Turbo Frames
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Followed this [video](https://www.youtube.com/watch?v=ap551f2a_d0) to get started.
