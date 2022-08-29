@@ -49,3 +49,5 @@ Icon
 
 # dot-env gem
 .env
+/app/assets/builds/*
+!/app/assets/builds/.keep
